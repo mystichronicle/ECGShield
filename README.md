@@ -1,7 +1,7 @@
 # 🛡️ ECGShield - Noise Removal from ECG Signals
 > **A powerful tool for removing noise from ECG signals using advanced filtering techniques.**
 
-> Built with **Python, Streamlit, React, and GitHub Pages**, ECGShield helps in **denoising ECG signals** with interactive visualizations and real-time filtering.
+> Built with **Python and Streamlit**, ECGShield helps in **denoising ECG signals** with interactive visualizations and real-time filtering.
 
 
 ---
@@ -20,14 +20,8 @@
    - **Signal-to-Noise Ratio (SNR)**
    - **Mean Squared Error (MSE)**
 ✅ **Download the cleaned ECG signal** for further research  
-✅ **Fully interactive UI** using **Streamlit & React**  
-✅ **Deployed with GitHub Pages & Streamlit Cloud**
-
----
-
-## 🚀 Live Demo
-🖥️ **Frontend (React):** [ECGShield GitHub Pages](https://mystichronicle.github.io/ECGShield)  
-📡 **Backend (Streamlit):** [ECGShield Streamlit Cloud](https://ecg-noise-removal.streamlit.app)
+✅ **Fully interactive UI** using **Streamlit**  
+✅ **Runs locally without requiring cloud deployment**
 
 ---
 
@@ -38,24 +32,20 @@ git clone https://github.com/mystichronicle/ECGShield.git
 cd ECGShield
 ```
 
-### **2️⃣ Install Python Dependencies**
+### **2️⃣ Install Dependencies**
 ```bash
 pip install -r requirements.txt
 ```
 
-### **3️⃣ Run the Backend (Streamlit)**
+### **3️⃣ Run the Streamlit App Locally**
 ```bash
-streamlit run src/streamlit_app.py
+streamlit run src/gui.py
 ```
-The **backend will start at** `http://localhost:8501`.
-
-### **4️⃣ Run the Frontend (React)**
-```bash
-cd ecg-frontend
-npm install
-npm start
-```
-The **frontend will start at** `http://localhost:3000`.
+- This will open the **ECG Noise Removal App** in the browser.
+- The **local server** will run at:  
+  ```
+  http://localhost:8501
+  ```
 
 ---
 
@@ -83,20 +73,8 @@ The **frontend will start at** `http://localhost:3000`.
 ## 📌 Project Structure
 ```
 ECGShield/
-│── ecg-frontend/              # React frontend
-│   ├── src/                   
-│   │   ├── App.js             # React UI
-│   │   ├── index.js           # Main React entry
-│   │   └── styles.css         # CSS styles
-│   ├── public/                # Static assets
-│   ├── package.json           # React dependencies
-│   ├── .gitignore             
-│   ├── README.md              
-│   ├── node_modules/          # Installed dependencies
-│   └── build/                 # Deployed static files (GitHub Pages)
-│
 │── src/                       # Python backend (Streamlit)
-│   ├── streamlit_app.py       # Main backend script
+│   ├── gui.py                 # Main Streamlit GUI script
 │   ├── filtering.py           # Signal filtering functions
 │   ├── preprocessing.py       # Noise addition functions
 │   ├── evaluation.py          # SNR & MSE calculations
@@ -107,10 +85,9 @@ ECGShield/
 │   ├── processed/             # Filtered signals
 │
 │── README.md                  # Project Documentation
-│── requirements.txt            # Python dependencies
-│── .gitignore                  # Ignore unnecessary files
-│── LICENSE                     # Open-source license
-└── deploy.sh                   # Deployment script
+│── requirements.txt           # Python dependencies
+│── .gitignore                 # Ignore unnecessary files
+└── LICENSE                    # Open-source license
 ```
 
 ---
@@ -118,10 +95,9 @@ ECGShield/
 ## 📌 Technologies Used
 | Component    | Technology |
 |-------------|------------|
-| **Frontend** | React, GitHub Pages |
 | **Backend**  | Streamlit, Python |
 | **Signal Processing** | NumPy, SciPy, WFDB, PyWavelets |
-| **Deployment** | GitHub Pages, Streamlit Cloud |
+
 
 ---
 
@@ -133,7 +109,7 @@ ECGShield/
 ## 📌 Acknowledgments
 🙏 Special thanks to:
 - **MIT-BIH Arrhythmia Database** for ECG datasets
-- **Streamlit & React communities** for amazing frameworks
+- **Streamlit & Python communities** for amazing frameworks
 - **OpenAI & SciPy** for signal processing tools
 
 ---
