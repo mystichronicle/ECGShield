@@ -1,11 +1,28 @@
+# Ignore Python cache files
 __pycache__/
 *.pyc
 *.pyo
+
+# Ignore Node.js dependencies (Frontend)
 node_modules/
 build/
+
+# Ignore Environment Variables & Configs
 .env
+
+# Ignore Dataset & Large Files
 data/raw/*
 data/processed/*
-results/*
+data/uploads/*
 temp_ecg_record.*
+
+# Ignore Log Files & Misc
+*.log
+*.csv
+*.wav
+*.dat
+*.hea
+*.h5
+*.zip
+*.tar
 
