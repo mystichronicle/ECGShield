@@ -5,3 +5,7 @@ wfdb
 pywt
 pandas
 streamlit
+requests
+fastapi
+uvicorn
+watchdog
