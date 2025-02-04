@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+*.pyo
+node_modules/
+build/
+.env
+data/raw/*
+data/processed/*
+results/*
+temp_ecg_record.*
+
